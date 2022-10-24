@@ -1,10 +1,13 @@
 import Head from 'next/head'
 import { useTheme } from 'next-themes'
-import Posts from '../components/Posts'
+import Posts from '../components/Posts' // Imports the Posts
 
 export default function Home() {
   const { theme, setTheme } = useTheme()
 
+  /**
+   * Check the theme and set the font color
+   */
   let fontColor = '';
   if (theme==='light') {
     fontColor = '#282C35';
@@ -21,14 +24,24 @@ export default function Home() {
       </Head>
 
       <main>
+        {/**
+         * Page Title
+         */}
         <h1>
           Overreacted {' '}
+          {/**
+           * Theme Switch
+           * By selecting an option, it will use setTheme function to change the theme
+           */}
           <select value={theme} onChange={e => setTheme(e.target.value)}>
             <option value="dark">Dark</option>
             <option value="light">Light</option>
           </select>
         </h1>
         
+        {/**
+         * The avatar and the slug
+         */}
         <div>
           <img src="https://avatars.githubusercontent.com/u/10987736?v=4" alt="Shahin Ilderemi" className='avatar' />
           <p className='slug'>
@@ -36,6 +49,9 @@ export default function Home() {
           </p>
         </div>
 
+        {/**
+         * Load the posts
+         */}
         <Posts />
       </main>
 

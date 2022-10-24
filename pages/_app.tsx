@@ -1,7 +1,7 @@
 import { createGlobalStyle } from 'styled-components'
 import { ThemeProvider } from 'next-themes'
 
-// Your themeing variables
+// the global style
 const GlobalStyle = createGlobalStyle`
   :root {
     --fg: #282C35;
