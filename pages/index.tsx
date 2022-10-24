@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Image from "next/image"
 import { useTheme } from 'next-themes'
 import Posts from '../components/Posts'
 
@@ -31,7 +30,7 @@ export default function Home() {
         </h1>
         
         <div>
-          <Image src="https://avatars.githubusercontent.com/u/10987736?v=4" alt="Shahin Ilderemi" className='avatar' />
+          <img src="https://avatars.githubusercontent.com/u/10987736?v=4" alt="Shahin Ilderemi" className='avatar' />
           <p className='slug'>
             Personal blog by <a href='https://ildrm.info'>Shahin Ilderemi</a>.<br />I explain with words and code.
           </p>
