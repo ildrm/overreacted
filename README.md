@@ -6,3 +6,5 @@ Please follow these steps to run the project:
 4. Run this command to execute the project: `npm run dev`
 
 You can create a build version using `npm run build`
+
+To run the project with docker-compose: `docker-compose up --build`
